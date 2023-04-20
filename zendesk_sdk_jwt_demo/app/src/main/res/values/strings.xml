@@ -1,0 +1,43 @@
+<resources>
+
+    <string name="app_name">Zendesk JWT Demo App</string>
+
+    <string name="channel_key">{Add your channel key here}</string>
+    <string name="jwt_token">{Add your JWT here}</string>
+
+    <!-- TOOL BAR -->
+
+    <string name="about">About</string>
+    <string name="about_title">About this app</string>
+    <string name="about_message">This demo app is intended to help developers get up and running with the Zendesk SDK by providing a working example of the software, and providing some useful actions to explore the end-user experience.</string>
+
+    <!-- CARDS -->
+
+    <string name="initialize_card_title">Initialize the SDK</string>
+    <string name="initialize_card_description">Initializes the Zendesk SDK with the channel key specified in the demo source code. Initializing will load your settings, and prepare the SDK to show a conversation.</string>
+    <string name="initialize_button">Initialize Zendesk</string>
+
+    <string name="login_card_title">Authenticate the user</string>
+    <string name="login_card_description">The Zendesk SDK allows authentication of end users so their identity can be trusted by agents using Zendesk.</string>
+    <string name="login_button">Log in</string>
+    <string name="logout_button">Log out</string>
+
+    <string name="conversation_card_title">Show the conversation view</string>
+    <string name="conversation_card_description">Displays the conversation screen for the initial conversation created for your user. A user and a new conversation will automatically be created if they don\'t exist. Ensure you have previously initialized the Zendesk SDK.</string>
+    <string name="conversation_button">Show conversation</string>
+
+    <!-- SNACK BAR -->
+
+    <string name="msg_init_success">Initialization successful</string>
+    <string name="msg_init_error">Initialization failed</string>
+
+    <string name="msg_login_success">Authentication successful</string>
+    <string name="msg_login_error">Authentication failed</string>
+    <string name="msg_logout_success">User logged out</string>
+    <string name="msg_logout_error">User log out failed</string>
+
+    <!-- LOGS -->
+
+    <string name="msg_authentication_failed_event">Authentication failed event triggered</string>
+
+</resources>
