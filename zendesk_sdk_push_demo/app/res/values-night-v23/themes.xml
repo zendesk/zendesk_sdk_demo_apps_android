@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Zendesk_sdk_push_demo.v23" parent="Theme.Zendesk_sdk_push_demo">
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>

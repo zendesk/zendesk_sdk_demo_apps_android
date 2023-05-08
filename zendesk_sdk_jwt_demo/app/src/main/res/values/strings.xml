@@ -1,7 +1,7 @@
 <resources>
 
     <string name="app_name">Zendesk JWT Demo App</string>
-
+    <string name="app_name_toolbar">Zendesk Demo App</string>
     <string name="channel_key">{Add your channel key here}</string>
     <string name="jwt_token">{Add your JWT here}</string>
 

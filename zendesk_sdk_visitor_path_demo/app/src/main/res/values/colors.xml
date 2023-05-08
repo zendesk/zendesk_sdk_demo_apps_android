@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="zendesk_primary_light">#006970</color>
+    <color name="zendesk_secondary_light">#006D38</color>
+    <color name="zendesk_tertiary_light">#006875</color>
+    <color name="error_light">#BA1A1A</color>
+    <color name="surface_light">#F6FEFF</color>
+    <color name="on_surface_light">#001F24</color>
+    <color name="on_surface_variant_light">#BEC8C9</color>
+
+    <color name="gradient_start_light">#F5FFF3</color>
+    <color name="gradient_end_light">#C3FFCE</color>
+
+    <color name="zendesk_primary_dark">#4DD9E4</color>
+    <color name="zendesk_secondary_dark">#6FDC91</color>
+    <color name="zendesk_tertiary_dark">#50D8ED</color>
+    <color name="error_dark">#FFB4AB</color>
+    <color name="surface_dark">#001F24</color>
+    <color name="on_surface_dark">#97F0FF</color>
+    <color name="on_surface_variant_dark">#3F4849</color>
+
+    <color name="gradient_start_dark">#000000</color>
+    <color name="gradient_end_dark">#001416</color>
+
+</resources>

@@ -21,7 +21,7 @@
             app:layout_scrollEffect="compress"
             app:layout_scrollFlags="scroll"
             app:menu="@menu/top_app_bar"
-            app:title="@string/app_name"
+            app:title="@string/app_name_toolbar"
             app:titleCentered="true"
             app:titleTextAppearance="@style/style_app_bar_title" />
 

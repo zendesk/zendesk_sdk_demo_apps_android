@@ -1,0 +1,37 @@
+<resources>
+
+    <string name="app_name">Zendesk Demo Push App</string>
+    <string name="app_name_toolbar">Zendesk Demo App</string>
+    <string name="channel_key">{Add your channel key here}</string>
+
+    <!-- TOOL BAR -->
+
+    <string name="about">About</string>
+    <string name="about_title">About this app</string>
+    <string name="about_message">This demo app is intended to help developers get up and running with the Zendesk SDK by providing a working example of the software, and providing some useful actions to explore the end-user experience.</string>
+
+    <!-- CARDS -->
+
+    <string name="initialize_card_title">Initialize the SDK</string>
+    <string name="initialize_card_description">Initializes the Zendesk SDK with the channel key specified in the demo source code. Initializing will load your settings, and prepare the SDK to show a conversation.</string>
+    <string name="initialize_button">Initialize Zendesk</string>
+
+    <string name="conversation_card_title">Show the conversation view</string>
+    <string name="conversation_card_description">Displays the conversation screen for the initial conversation created for your user. A user and a new conversation will automatically be created if they don\'t exist. Ensure you have previously initialized the Zendesk SDK.</string>
+    <string name="conversation_button">Show conversation</string>
+
+    <string name="push_card_title">Register for push notifications</string>
+    <string name="push_card_description">The Zendesk SDK supports Firebase Cloud Messaging for push notifications. See instructions for setting up push notifications in your app.</string>
+    <string name="register_push_button">Register push notifications</string>
+
+    <!-- SNACK BAR -->
+
+    <string name="msg_init_success">Initialization Successful</string>
+    <string name="msg_init_error">Initialization Failed</string>
+
+    <string name="msg_push_registration_success">Registration Successful</string>
+    <string name="msg_push_registration_error">Registration Failed</string>
+    <string name="msg_push_disabled">Push is not enabled, skipping registration</string>
+
+
+</resources>

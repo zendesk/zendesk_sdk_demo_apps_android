@@ -1,0 +1,22 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.Zendesk_sdk_push_demo" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="colorPrimary">@color/zendesk_primary_dark</item>
+        <item name="colorSecondary">@color/zendesk_secondary_dark</item>
+        <item name="colorTertiary">@color/zendesk_tertiary_dark</item>
+        <item name="colorError">@color/error_dark</item>
+        <item name="colorSurface">@color/surface_dark</item>
+        <item name="colorOnSurface">@color/on_surface_dark</item>
+        <item name="colorOutline">@color/on_surface_variant_dark</item>
+
+        <item name="colorTertiaryContainer">@color/gradient_start_dark</item>
+        <item name="colorSecondaryContainer">@color/gradient_end_dark</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <!-- Customize your theme here. -->
+        <item name="materialButtonStyle">@style/Widget.MyApp.Button</item>
+    </style>
+
+</resources>

@@ -1,0 +1,39 @@
+<resources>
+
+    <string name="app_name">Zendesk Demo App</string>
+    <string name="channel_key">eyJzZXR0aW5nc191cmwiOiJodHRwczovL3ozbmFkdm9jYXRlODQxNjIxMzI3Njk1LnplbmRlc2suY29tL21vYmlsZV9zZGtfYXBpL3NldHRpbmdzLzAxRjVaQk0yWVJRU05LVEJCQUJZOEZXU05aLmpzb24ifQ==</string>
+    <string name="jwt_token">eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImFwcF82MWYzZDdkMTAzZWZlMjAwZWRmMTdkNWQifQ.eyJleHRlcm5hbF9pZCI6InRlc3QxMjMiLCJzY29wZSI6InVzZXIiLCJuYW1lIjoidGVzdCIsImVtYWlsIjoidGVzdEBleGFtcGxlLmNvbSIsImlhdCI6MTY3NjkwODE5OH0.cSawHzWCO4IxE4A22lUdf-QXg9qqEbpvT_JLqr5rXYU</string>
+
+    <!-- TOOL BAR -->
+
+    <string name="about">About</string>
+    <string name="about_title">About this app</string>
+    <string name="about_message">This demo app is intended to help developers get up and running with the Zendesk SDK by providing a working example of the software, and providing some useful actions to explore the end-user experience.</string>
+
+    <!-- CARDS -->
+
+    <string name="initialize_card_title">Initialize the SDK</string>
+    <string name="initialize_card_description">Initializes the Zendesk SDK with the channel key specified in the demo source code. Initializing will load your settings, and prepare the SDK to show a conversation.</string>
+    <string name="initialize_button">Initialize Zendesk</string>
+
+    <string name="conversation_card_title">Show the conversation view</string>
+    <string name="conversation_card_description">Displays the conversation screen for the initial conversation created for your user. A user and a new conversation will automatically be created if they don\'t exist. Ensure you have previously initialized the Zendesk SDK.</string>
+    <string name="conversation_button">Show conversation</string>
+
+    <string name="login_card_title">Authentication</string>
+    <string name="login_card_description">The Zendesk SDK allows authentication of end users so that their identity can be verified by agents using Zendesk.</string>
+    <string name="login_button">Login</string>
+    <string name="logout_button">Logout</string>
+
+    <!-- SNACK BAR -->
+
+    <string name="msg_init_success">Initialization Successful</string>
+    <string name="msg_init_error">Initialization Failed</string>
+
+    <string name="msg_login_success">msg_login_success</string>
+    <string name="msg_login_error">msg_login_error</string>
+    <string name="msg_logout_success">msg_logout_success</string>
+    <string name="msg_logout_error">msg_logout_error</string>
+    <string name="msg_authentication_failed_event">msg_authentication_failed_event</string>
+
+</resources>

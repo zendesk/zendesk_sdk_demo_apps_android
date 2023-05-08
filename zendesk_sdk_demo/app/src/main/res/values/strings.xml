@@ -1,6 +1,7 @@
 <resources>
 
     <string name="app_name">Zendesk Demo App</string>
+    <string name="app_name_toolbar">Zendesk Demo App</string>
     <string name="channel_key">{Add your channel key here}</string>
 
     <!-- TOOL BAR -->
