@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Theme.Zendesk_sdk_jwt_demo" parent="Theme.Material3.DayNight.NoActionBar">
 
@@ -15,6 +15,7 @@
 
         <!-- Status bar color. -->
         <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
         <!-- Customize your theme here. -->
         <item name="materialButtonStyle">@style/Widget.MyApp.Button</item>
     </style>

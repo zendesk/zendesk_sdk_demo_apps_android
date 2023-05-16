@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Zendesk_sdk_demo" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Theme.Zendesk_sdk_jwt_demo" parent="Theme.Material3.DayNight.NoActionBar">
 
         <item name="colorPrimary">@color/zendesk_primary_light</item>
         <item name="colorSecondary">@color/zendesk_secondary_light</item>
