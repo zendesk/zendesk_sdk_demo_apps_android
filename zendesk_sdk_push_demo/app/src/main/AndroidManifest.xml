@@ -12,18 +12,18 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Zendesk_sdk_push_demo"
+        android:theme="@style/Theme.Zendesk_sdk_demo"
         tools:targetApi="33">
 
         <!-- Use the SDK default messaging service -->
-        <service android:name="zendesk.messaging.android.push.DefaultMessagingService"
+        <!--service android:name="zendesk.messaging.android.push.DefaultMessagingService"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
-        </service>
+        </service-->
         <!-- Use the the custom messaging service -->
-        <!--
+
         <service
             android:name=".MyFirebaseMessagingService"
             android:exported="false">
@@ -31,7 +31,6 @@
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-        -->
 
         <activity
             android:exported="true"
