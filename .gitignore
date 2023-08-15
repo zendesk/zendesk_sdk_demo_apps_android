@@ -83,3 +83,10 @@ lint/generated/
 lint/outputs/
 lint/tmp/
 # lint/reports/
+/.idea/
+/zendesk_sdk_click_handler_demo/.idea/
+/zendesk_sdk_demo/.idea/
+/zendesk_sdk_jwt_demo/.idea/
+/zendesk_sdk_push_demo/.idea/
+/zendesk_sdk_unread_message_demo/.idea/
+/zendesk_sdk_visitor_path_demo/.idea/
