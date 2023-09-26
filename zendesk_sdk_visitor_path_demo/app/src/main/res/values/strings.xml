@@ -21,7 +21,7 @@
     <string name="conversation_button">Show conversation</string>
 
     <string name="visitor_card_title">Send page view events</string>
-    <string name="visitor_card_description">The Visitor Path lets agents see what screen the end user had landed on, for better conversation context. A PageView object encapsulates information related to a user's interactions and passes it to the Page View Event API.</string>
+    <string name="visitor_card_description">The Visitor Path lets agents see what screen the end user had landed on, for better conversation context. A PageView object encapsulates information related to a user\'s interactions and passes it to the Page View Event API.</string>
 
     <!-- SNACK BAR -->
 

@@ -2,7 +2,7 @@
 
     <string name="app_name">Zendesk JWT Demo App</string>
     <string name="app_name_toolbar">Zendesk Demo App</string>
-    <string name="channel_key">{Add your channel key here}</string>
+    <string name="channel_key">eyJzZXR0aW5nc191cmwiOiJodHRwczovL3o0bm5tdGVzdGFwcC56ZW5kZXNrLmNvbS9tb2JpbGVfc2RrX2FwaS9zZXR0aW5ncy8wMUVXSlRWNzdaWjNZUFpRVkRWNE5XMlc5Uy5qc29uIn0=</string>
     <string name="jwt_token">{Add your JWT here}</string>
 
     <!-- TOOL BAR -->
