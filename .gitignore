@@ -60,7 +60,7 @@ captures/
 .cxx/
 
 # Google Services (e.g. APIs or Firebase)
-# *google-services.json
+/zendesk_sdk_push_demo/app/google-services.json
 
 # Freeline
 freeline.py
@@ -90,3 +90,4 @@ lint/tmp/
 /zendesk_sdk_push_demo/.idea/
 /zendesk_sdk_unread_message_demo/.idea/
 /zendesk_sdk_visitor_path_demo/.idea/
+/zendesk_sdk_metadata_demo/.idea/
