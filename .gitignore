@@ -13,3 +13,6 @@
 *.iml
 /**/.idea/
 /**/local.properties
+
+# Google-services.json
+/**/google-services.json
