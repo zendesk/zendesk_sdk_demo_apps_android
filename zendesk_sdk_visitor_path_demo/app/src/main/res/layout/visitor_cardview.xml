@@ -29,6 +29,13 @@
                 android:layout_marginVertical="16dp"
                 android:text="@string/visitor_card_description" />
 
+            <Button
+                android:id="@+id/sendPageEventButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="@string/visitor_card_button" />
+
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 </merge>
