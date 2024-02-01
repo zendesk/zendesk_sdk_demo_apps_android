@@ -9,17 +9,17 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.core.view.WindowCompat
+import androidx.core.view.isVisible
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar
 import zendesk.android.Zendesk
 import zendesk.android.events.ZendeskEvent
 import zendesk.android.events.ZendeskEventListener
 import zendesk.logger.Logger
-import zendesk.messaging.android.DefaultMessagingFactory
 
 class MainActivity : AppCompatActivity() {
 
-    val LOG_TAG = "[${this.javaClass.name}]"
+    private val LOG_TAG = "[${this.javaClass.name}]"
 
     private var coordinatorLayout: CoordinatorLayout? = null
 
@@ -36,9 +36,7 @@ class MainActivity : AppCompatActivity() {
         Logger.setLoggable(true)
 
         val initButton = findViewById<Button>(R.id.InitButton)
-        initButton.setOnClickListener {
-            initializeZendesk()
-        }
+        initButton.isVisible = false
 
         // https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/getting_started/#show-the-conversation
         val startButton = findViewById<Button>(R.id.StartButton)
@@ -79,24 +77,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     // SDK related methods
-
-    private fun initializeZendesk() {
-        // https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/getting_started/#initialize-the-sdk
-        Zendesk.initialize(this, this.getString(R.string.channel_key), successCallback = { zendesk ->
-            Log.i(LOG_TAG, getString(R.string.msg_init_success))
-            // Extra line to add the event listener only once the initialization is completed
-            addEventListener()
-            coordinatorLayout?.let {
-                Snackbar.make(it, getString(R.string.msg_init_success), Snackbar.LENGTH_LONG).show()
-            }
-        }, failureCallback = { error ->
-            // Tracking the cause of exceptions in your crash reporting dashboard will help to triage any unexpected failures in production
-            Log.e(LOG_TAG, "${getString(R.string.msg_init_error)}: $error")
-            coordinatorLayout?.let {
-                Snackbar.make(it, getString(R.string.msg_init_error), Snackbar.LENGTH_LONG).show()
-            }
-        }, messagingFactory = DefaultMessagingFactory())
-    }
 
     private fun login() {
         //https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/advanced_integration/#loginuser
