@@ -34,7 +34,7 @@ android {
 
 dependencies {
     // ZD
-    implementation("zendesk.messaging:messaging-android:2.18.0")
+    implementation("zendesk.messaging:messaging-android:2.19.0")
 
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
