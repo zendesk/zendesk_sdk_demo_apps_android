@@ -36,7 +36,7 @@ android {
 dependencies {
 
     // ZD
-    implementation "zendesk.messaging:messaging-android:2.21.0"
+    implementation "zendesk.messaging:messaging-android:2.22.0"
 
     // Import the Firebase BoM
     implementation platform('com.google.firebase:firebase-bom:32.3.1')
