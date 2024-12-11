@@ -69,23 +69,4 @@ class MainActivity : AppCompatActivity() {
             super.onOptionsItemSelected(item)
         }
     }
-
-    // SDK related methods
-
-    private fun addEventsListener() {
-
-        // To create and use the event listener:
-        val zendeskEventListener = ZendeskEventListener { zendeskEvent ->
-            when (zendeskEvent) {
-                is ZendeskEvent.UnreadMessageCountChanged -> {
-                    Log.d(LOG_TAG, "[UnreadMessageCountChanged] - ${zendeskEvent.currentUnreadCount}")
-                }
-                else -> {
-                    // Default branch for forward compatibility with Zendesk SDK and its `ZendeskEvent` expansion
-                }
-            }
-        }
-        // To add the event listener to your Zendesk instance:
-        Zendesk.instance.addEventListener(zendeskEventListener)
-    }
 }
