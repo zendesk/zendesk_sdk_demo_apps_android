@@ -13,8 +13,6 @@ import androidx.core.view.isVisible
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar
 import zendesk.android.Zendesk
-import zendesk.android.events.ZendeskEvent
-import zendesk.android.events.ZendeskEventListener
 import zendesk.logger.Logger
 
 class MainActivity : AppCompatActivity() {
@@ -111,26 +109,5 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         )
-    }
-
-    private fun addEventListener() {
-        // https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/advanced_integration/#eventlistener
-        // To create and use the event listener:
-        val zendeskEventListener = ZendeskEventListener { zendeskEvent ->
-            when (zendeskEvent) {
-                is ZendeskEvent.AuthenticationFailed -> {
-                    Log.d(LOG_TAG, getString(R.string.msg_authentication_failed_event))
-                }
-                else -> {
-                    // Default branch for forward compatibility with Zendesk SDK and its `ZendeskEvent` expansion
-                }
-            }
-        }
-        // To add the event listener to your Zendesk instance:
-        // (safe for concurrent use)
-        Zendesk.instance.addEventListener(zendeskEventListener)
-        // To remove the event listener from your Zendesk instance:
-        // (safe for concurrent use)
-        //Zendesk.instance.removeEventListener(zendeskEventListener)
     }
 }
