@@ -42,6 +42,7 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.StartButton).setOnClickListener {
             Zendesk.instance.messaging.showMessaging(this)
         }
+        addClickHandler()
     }
 
     override fun onPrepareOptionsMenu(menu: Menu?): Boolean {
