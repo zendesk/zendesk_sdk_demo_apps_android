@@ -28,7 +28,7 @@ class MainApplication : Application() {
         val zendeskEventListener = ZendeskEventListener { zendeskEvent ->
             when (zendeskEvent) {
                 is ZendeskEvent.UnreadMessageCountChanged -> {
-                    Log.d(LOG_TAG, "[UnreadMessageCountChanged] - ${zendeskEvent.currentUnreadCount}")
+                    Log.d(LOG_TAG, "[UnreadMessageCountChanged] - ${zendeskEvent.data.totalUnreadMessagesCount}")
                 }
                 else -> {
                     // Default branch for forward compatibility with Zendesk SDK and its `ZendeskEvent` expansion

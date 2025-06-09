@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.example.zendesk_sdk_metadata_demo"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.zendesk_sdk_metadata_demo"
         minSdk = 21
-        targetSdk = 35
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0"
         vectorDrawables.useSupportLibrary = true
@@ -34,7 +34,7 @@ android {
 
 dependencies {
     // ZD
-    implementation("zendesk.messaging:messaging-android:2.31.0")
+    implementation("zendesk.messaging:messaging-android:2.32.0")
 
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
