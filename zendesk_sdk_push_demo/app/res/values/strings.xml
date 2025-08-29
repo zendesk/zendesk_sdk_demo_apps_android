@@ -1,8 +1,8 @@
 <resources>
 
     <string name="app_name">Zendesk Demo App</string>
-    <string name="channel_key">eyJzZXR0aW5nc191cmwiOiJodHRwczovL3ozbmFkdm9jYXRlODQxNjIxMzI3Njk1LnplbmRlc2suY29tL21vYmlsZV9zZGtfYXBpL3NldHRpbmdzLzAxRjVaQk0yWVJRU05LVEJCQUJZOEZXU05aLmpzb24ifQ==</string>
-    <string name="jwt_token">eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImFwcF82MWYzZDdkMTAzZWZlMjAwZWRmMTdkNWQifQ.eyJleHRlcm5hbF9pZCI6InRlc3QxMjMiLCJzY29wZSI6InVzZXIiLCJuYW1lIjoidGVzdCIsImVtYWlsIjoidGVzdEBleGFtcGxlLmNvbSIsImlhdCI6MTY3NjkwODE5OH0.cSawHzWCO4IxE4A22lUdf-QXg9qqEbpvT_JLqr5rXYU</string>
+    <string name="channel_key">{Add your channel key here}</string>
+    <string name="jwt_token">{Add your JWT here}</string>
 
     <!-- TOOL BAR -->
 
