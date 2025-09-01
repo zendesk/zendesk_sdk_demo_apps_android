@@ -4,6 +4,7 @@
     <string name="app_name_toolbar">Zendesk Demo App</string>
     <string name="channel_key">{Add your channel key here}</string>
     <string name="jwt_token">{Add your JWT here}</string>
+    <string name="jwt_expired">{Add your expired JWT token}</string>
 
     <!-- TOOL BAR -->
 
