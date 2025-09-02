@@ -14,5 +14,5 @@ Please submit a ticket to [Zendesk](https://support.zendesk.com/hc/en-us/article
 Each folder in this repository is a completely distinct app, each of them containing a README.md file to help you setup the application.
  
 ## Bugs
-Please submit bug reports to [Zendesk](https://support.zendesk.com/hc/en-us/articles/4408843597850) and be sure to consult our [Getting help section](https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/getting_support_on_zendesk_mobile_sdks/) of our documentation.
+Please submit bug reports to [Zendesk](https://support.zendesk.com/hc/en-us/articles/4408843597850) and be sure to consult our [Getting help section]([https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/getting_support_on_zendesk_mobile_sdks/](https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/troubleshooting/)) of our documentation.
  
