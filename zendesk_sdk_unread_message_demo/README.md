@@ -1,6 +1,6 @@
 ## Introduction
 
-This is app is intended to demonstrate the ability to fetch for [Unread Messages](https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/getting_started/#unread-messages) of the Zendesk SDK.
+This is app is intended to demonstrate the ability to fetch for [Unread Messages](https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/unread_messages) of the Zendesk SDK.
 
 ## Step to use the app
 

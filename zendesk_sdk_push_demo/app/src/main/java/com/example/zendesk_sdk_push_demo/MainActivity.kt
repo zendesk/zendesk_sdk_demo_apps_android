@@ -37,12 +37,12 @@ class MainActivity : AppCompatActivity() {
 
         requestPushPermission()
 
-        // https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/getting_started/#troubleshooting
+        // https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/troubleshooting
         Logger.setLoggable(true)
 
         findViewById<Button>(R.id.InitButton).isVisible = false
 
-        // https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/getting_started/#show-the-conversation
+        // https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/getting_started/#4-show-messaging
         findViewById<Button>(R.id.StartButton).setOnClickListener {
             registerForPushIfEnabled()
             Zendesk.instance.messaging.showMessaging(this)
