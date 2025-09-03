@@ -32,17 +32,17 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(findViewById(R.id.topAppBar))
         coordinatorLayout = findViewById(R.id.coordinatorLayout)
 
-        // https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/getting_started/#troubleshooting
+        // https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/troubleshooting
         Logger.setLoggable(true)
 
         findViewById<Button>(R.id.InitButton).isVisible = false
 
-        // https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/getting_started/#show-the-conversation
+        // https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/getting_started/#4-show-messaging
         findViewById<Button>(R.id.StartButton).setOnClickListener {
             Zendesk.instance.messaging.showMessaging(this)
         }
 
-        // https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/getting_started/#show-the-conversation
+        // https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/unread_messages/#get-unread-message-count
         findViewById<Button>(R.id.UnreadButton).setOnClickListener {
             val unreadCount = Zendesk.instance.messaging.getUnreadMessageCount()
             coordinatorLayout?.let {

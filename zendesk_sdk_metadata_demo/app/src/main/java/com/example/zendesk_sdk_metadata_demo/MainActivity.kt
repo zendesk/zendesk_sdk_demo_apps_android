@@ -29,17 +29,17 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(findViewById(R.id.topAppBar))
         coordinatorLayout = findViewById(R.id.coordinatorLayout)
 
-        // https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/getting_started/#troubleshooting
+        // https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/troubleshooting
         Logger.setLoggable(true)
 
         findViewById<Button>(R.id.InitButton).isVisible = false
 
-        // https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/getting_started/#show-the-conversation
+        // https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/getting_started/#4-show-messaging
         findViewById<Button>(R.id.StartButton).setOnClickListener {
             Zendesk.instance.messaging.showMessaging(this)
         }
 
-        //https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/advanced_integration/#conversation-fields
+        // https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/messaging_metadata/#setting-conversation-fields
         findViewById<Button>(R.id.MetadataAddFieldsButton).setOnClickListener {
             addConversationFields()
         }
@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
             clearConversationFields()
         }
 
-        // https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/advanced_integration/#conversation-tags
+        // https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/messaging_metadata/#setting-conversation-tags
         findViewById<Button>(R.id.MetadataAddTagsButton).setOnClickListener {
             addConversationTags()
         }
@@ -78,7 +78,7 @@ class MainActivity : AppCompatActivity() {
     // SDK related methods
 
     private fun addConversationFields() {
-        //https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/advanced_integration/#set-conversation-fields
+        // https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/messaging_metadata/#setting-conversation-fields
         val fields = mapOf("1234567890" to "value of the field")
         Zendesk.instance.messaging.setConversationFields(fields)
         coordinatorLayout?.let { layout ->
@@ -86,7 +86,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
     private fun clearConversationFields() {
-        //https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/advanced_integration/#clear-conversation-fields
+        // https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/messaging_metadata/#clearing-conversation-fields
         Zendesk.instance.messaging.clearConversationFields()
         coordinatorLayout?.let { layout ->
             Snackbar.make(layout, getString(R.string.msg_clear_fields), Snackbar.LENGTH_LONG).show()
@@ -94,7 +94,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun addConversationTags() {
-        //https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/advanced_integration/#set-conversation-tags
+        //https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/messaging_metadata/#setting-conversation-tags
         val tags = listOf("tag", "tag_from_demo")
         Zendesk.instance.messaging.setConversationTags(tags)
         coordinatorLayout?.let { layout ->
@@ -102,7 +102,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
     private fun clearConversationTags() {
-        //https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/advanced_integration/#clear-conversation-tags
+        // https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/messaging_metadata/#clearing-conversation-tags
         Zendesk.instance.messaging.clearConversationTags()
         coordinatorLayout?.let { layout ->
             Snackbar.make(layout, getString(R.string.msg_clear_tags), Snackbar.LENGTH_LONG).show()

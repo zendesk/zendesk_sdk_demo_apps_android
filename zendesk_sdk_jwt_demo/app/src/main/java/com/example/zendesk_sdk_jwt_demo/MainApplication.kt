@@ -29,7 +29,7 @@ class MainApplication : Application() {
             delay = 2000L,
             jwt = this.resources.getString(R.string.jwt_token),
         )
-        // https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/getting_started/#initialize-the-sdk
+        // https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/getting_started/#3-initialize-the-sdk
         Zendesk.initialize(this, this.getString(R.string.channel_key), successCallback = { zendesk ->
             Log.i(LOG_TAG, getString(R.string.msg_init_success))
             addEventListener()
@@ -65,7 +65,8 @@ class MainApplication : Application() {
     }
 
     private fun addEventListener() {
-        // https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/advanced_integration/#eventlistener
+        // https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/zendesk_events/#eventlistener
+        // https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/authentication/#handling-authentication-failures-with-zendeskeventauthenticationfailed
         // To create and use the event listener:
         val zendeskEventListener = ZendeskEventListener { zendeskEvent ->
             when (zendeskEvent) {

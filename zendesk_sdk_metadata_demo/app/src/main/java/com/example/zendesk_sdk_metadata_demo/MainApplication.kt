@@ -10,7 +10,7 @@ class MainApplication : Application() {
     override fun onCreate() {
         super.onCreate()
 
-        // https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/getting_started/#initialize-the-sdk
+        // https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/getting_started/#3-initialize-the-sdk
         Zendesk.initialize(this, this.getString(R.string.channel_key), successCallback = { zendesk ->
             Log.i(LOG_TAG, getString(R.string.msg_init_success))
         }, failureCallback = { error ->

@@ -1,6 +1,6 @@
 ## Introduction
 
-This is app is intended to demonstrate the ability to apply a [Visitor Path](https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/advanced_integration/#visitor-path) of the Zendesk SDK.
+This is app is intended to demonstrate the ability to apply a visitor path with [Page View Events](https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/page_view_events) of the Zendesk SDK.
 
 ## Step to use the app
 

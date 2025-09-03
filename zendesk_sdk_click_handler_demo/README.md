@@ -1,6 +1,6 @@
 ## Introduction
 
-This is app is intended to demonstrate the [Clickable links delegate](https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/advanced_integration/#clickable-links-delegate) of the Zendesk SDK.
+This is app is intended to demonstrate the [Clickable links delegate](https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/click_delegates) of the Zendesk SDK.
 
 ## Step to use the app
 

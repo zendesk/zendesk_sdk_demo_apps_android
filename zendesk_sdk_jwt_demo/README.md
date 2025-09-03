@@ -1,8 +1,8 @@
 ## Introduction
 
-This is app is intended to demonstrate the [Authenticated experience](https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/advanced_integration/#authentication) of the Zendesk SDK.
+This is app is intended to demonstrate the [Authenticated experience](https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/authentication) of the Zendesk SDK.
 
-This app also include the [Authentication event listener](https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/advanced_integration/#eventlistener).
+This app also include the [Authentication event listener](https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/authentication/#handling-authentication-failures-with-zendeskeventauthenticationfailed).
 
 ## Step to use the app
 

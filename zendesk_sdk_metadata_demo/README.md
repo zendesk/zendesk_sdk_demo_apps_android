@@ -6,8 +6,8 @@ This demo app is to help developers get up and running with the [Zendesk SDK](ht
 
 * Update the `channel_key` resource in [`strings.xml`](./app/src/main/res/values/strings.xml) with your own account channel key.  
 You can find your channel key by following [those steps](https://support.zendesk.com/hc/en-us/articles/1260801714930).
-* Update the conversation [fields ID and value](https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/advanced_integration/#set-conversation-fields).
-* Update the conversation [tag list](https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/advanced_integration/#set-conversation-tags).
+* Update the conversation [fields ID and value](https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/messaging_metadata/#setting-conversation-fields).
+* Update the conversation [tag list](https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/messaging_metadata/#setting-conversation-tags).
 * Launch the app
 * Initialize Zendesk
 * Add the conversation fields.

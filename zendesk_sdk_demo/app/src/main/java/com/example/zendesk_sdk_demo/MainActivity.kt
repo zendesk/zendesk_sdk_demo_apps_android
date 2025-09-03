@@ -28,12 +28,12 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(findViewById(R.id.topAppBar))
         coordinatorLayout = findViewById(R.id.coordinatorLayout)
 
-        // https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/getting_started/#troubleshooting
+        // https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/troubleshooting
         Logger.setLoggable(true)
 
         findViewById<Button>(R.id.InitButton).isVisible = false
 
-        // https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/getting_started/#show-the-conversation
+        // https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/getting_started/#4-show-messaging
         findViewById<Button>(R.id.StartButton).setOnClickListener {
             Zendesk.instance.messaging.showMessaging(this)
         }

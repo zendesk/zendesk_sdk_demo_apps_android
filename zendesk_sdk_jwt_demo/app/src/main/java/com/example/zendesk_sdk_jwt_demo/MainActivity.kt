@@ -30,25 +30,25 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(findViewById(R.id.topAppBar))
         coordinatorLayout = findViewById<CoordinatorLayout>(R.id.coordinatorLayout)
 
-        // https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/getting_started/#troubleshooting
+        // https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/troubleshooting
         Logger.setLoggable(true)
 
         val initButton = findViewById<Button>(R.id.InitButton)
         initButton.isVisible = false
 
-        // https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/getting_started/#show-the-conversation
+        // https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/getting_started/#4-show-messaging
         val startButton = findViewById<Button>(R.id.StartButton)
         startButton.setOnClickListener {
             Zendesk.instance.messaging.showMessaging(this)
         }
 
-        //https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/advanced_integration/#loginuser
+        // https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/authentication/#loginuser
         val loginButton = findViewById<Button>(R.id.LoginButton)
         loginButton.setOnClickListener {
             login()
         }
 
-        // https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/advanced_integration/#logoutuser
+        // https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/authentication/#logoutuser
         val logoutButton = findViewById<Button>(R.id.LogoutButton)
         logoutButton.setOnClickListener {
             logout()
@@ -77,7 +77,7 @@ class MainActivity : AppCompatActivity() {
     // SDK related methods
 
     private fun login() {
-        //https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/advanced_integration/#loginuser
+        // https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/authentication/#loginuser
         Zendesk.instance.loginUser(
             getString(R.string.jwt_token),
             successCallback = { it ->
@@ -94,7 +94,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun logout() {
-        // https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/advanced_integration/#logoutuser
+        // https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/authentication/#logoutuser
         Zendesk.instance.logoutUser(
             successCallback = {
                 Log.d(LOG_TAG, getString(R.string.msg_logout_success))
