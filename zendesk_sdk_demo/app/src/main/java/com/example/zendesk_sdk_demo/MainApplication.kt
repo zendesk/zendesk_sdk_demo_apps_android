@@ -13,6 +13,9 @@ class MainApplication : Application() {
         // https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/getting_started/#3-initialize-the-sdk
         Zendesk.initialize(this, this.getString(R.string.channel_key), successCallback = { zendesk ->
             Log.i(LOG_TAG, getString(R.string.msg_init_success))
+            // https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/analytics_tracking
+            // Enable/Disable analytics tracking, enabled by default
+            zendesk.messaging.enableAnalyticsTracking(enabled = true)
         }, failureCallback = { error ->
             // Tracking the cause of exceptions in your crash reporting dashboard will help to triage any unexpected failures in production
             Log.e(LOG_TAG, "${getString(R.string.msg_init_error)}: $error")
