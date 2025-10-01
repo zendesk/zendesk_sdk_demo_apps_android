@@ -1,0 +1,29 @@
+<resources>
+
+    <string name="app_name">Zendesk Demo Navigation APIs</string>
+    <string name="app_name_toolbar">Zendesk Demo App</string>
+    <string name="channel_key">{Enter your own channel key}</string>
+
+    <!-- TOOL BAR -->
+
+    <string name="about">About</string>
+    <string name="about_title">About this app</string>
+    <string name="about_message">This demo app is intended to help developers get up and running with the Zendesk SDK by providing a working example of the software, and providing some useful actions to explore the end-user experience.</string>
+
+    <!-- CARDS -->
+
+    <string name="recently_active_conversation_title">Recently Active Conversation</string>
+    <string name="recently_active_conversation_description">Navigate to the most recently active conversation screen.</string>
+    <string name="conversation_list_title">Conversation List</string>
+    <string name="conversation_list_description">Navigate to the conversation list screen</string>
+    <string name="conversation_title">Conversation</string>
+    <string name="conversation_description">Navigate to the conversation screen with the provided conversation ID.</string>
+    <string name="create_conversation_title">Create new conversation</string>
+    <string name="create_conversation_description">Navigate to the newly created conversation screen</string>
+    <string name="go_to_conversation">Go to Conversation</string>
+
+
+    <string name="msg_init_success">Initialization Successful</string>
+    <string name="msg_init_error">Initialization Failed</string>
+
+</resources>
