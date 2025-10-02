@@ -22,6 +22,3 @@ val ErrorDark = Color(0xFFFFB4AB)
 val SurfaceDark = Color(0xFF001F24)
 val OnSurfaceDark = Color(0xFF97F0FF)
 val OnSurfaceVariantDark = Color(0xFF3F4849)
-
-val GradientStartDark = Color(0xFF000000)
-val GradientEndDark = Color(0xFF001416)
