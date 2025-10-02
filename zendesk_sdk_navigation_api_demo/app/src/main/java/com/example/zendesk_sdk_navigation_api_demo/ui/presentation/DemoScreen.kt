@@ -10,7 +10,7 @@ import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -29,7 +29,7 @@ fun DemoScreen(
     onNavigationIconClick: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
-    var backNavigationStates by remember(cards.size) { mutableStateOf(List(cards.size) { false }) }
+    var backNavigationStates by rememberSaveable(cards.size) { mutableStateOf(List(cards.size) { false }) }
 
     GradientBackground(
         modifier = modifier
