@@ -4,11 +4,12 @@ plugins {
 }
 
 android {
-    namespace = "com.example.zendesk_sdk_metadata_demo"
+
+    namespace = "com.example.zendesk_sdk_demo"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.zendesk_sdk_metadata_demo"
+        applicationId = "com.example.zendesk_sdk_demo"
         minSdk = 21
         targetSdk = 36
         versionCode = 1
@@ -20,8 +21,13 @@ android {
         release {
             isMinifyEnabled = false
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            isDebuggable = false
+        }
+        debug {
+            isDebuggable = true
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
@@ -33,8 +39,8 @@ android {
 
 dependencies {
     implementation(libs.zendesk.messaging)
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
+    implementation(libs.androidx.lifecycle.runtime.ktx)
 }
