@@ -1,0 +1,13 @@
+# Specific to local builds
+/local.properties
+/build
+**/build
+/buildSrc/build
+.gradle
+.DS_Store
+*.output
+.project
+
+# IDEA specific files
+/.idea/**
+*.iml
