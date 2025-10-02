@@ -23,6 +23,7 @@ class ZendeskManager @Inject constructor() {
     }
 
     fun showMessaging(context: Context, messagingScreen: MessagingScreen) {
+        // Documentation: https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/multi_conversations_navigation_apis/
         Zendesk.Companion.instance.messaging.showMessaging(
             context = context,
             screen = messagingScreen
