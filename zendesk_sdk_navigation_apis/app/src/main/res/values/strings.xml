@@ -6,6 +6,10 @@
 
     <!-- TOOL BAR -->
 
+    <string name="header_title">"Zendesk Multi conversations Navigation APIs Demo App"</string>
+    <string name="header_icon_description">Info Icon</string>
+
+
     <string name="about">About</string>
     <string name="about_title">About this app</string>
     <string name="about_message">This demo app is intended to help developers get up and running with the Zendesk SDK by providing a working example of the software, and providing some useful actions to explore the end-user experience.</string>

@@ -10,6 +10,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.zendesk_sdk_navigation_api_demo.R
@@ -20,9 +21,10 @@ fun Header(
     onIconClick: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
+    val context = LocalContext.current
     Box(modifier = Modifier.fillMaxWidth()) {
         Text(
-            text = "Zendesk Multi conversations Navigation APIs Demo App",
+            text = context.getString(R.string.header_title),
             style = MaterialTheme.typography.titleLarge,
             modifier = Modifier.align(Alignment.Center)
         )
@@ -31,7 +33,7 @@ fun Header(
                 .align(Alignment.CenterEnd)
                 .clickable { onIconClick() },
             painter = painterResource(id = R.drawable.ic_outline_error_outline_24),
-            contentDescription = "Info Icon"
+            contentDescription = context.getString(R.string.header_icon_description)
         )
     }
 }
