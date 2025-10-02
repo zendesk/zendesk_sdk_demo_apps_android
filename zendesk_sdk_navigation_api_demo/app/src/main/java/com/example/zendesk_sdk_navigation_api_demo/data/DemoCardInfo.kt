@@ -6,4 +6,5 @@ data class DemoCardInfo(
     val buttonText: String,
     val onAction: (Boolean) -> Unit,
     val enableBackNavigationUi: Boolean = true,
+    val enableWarningLabel: Boolean = false,
 )

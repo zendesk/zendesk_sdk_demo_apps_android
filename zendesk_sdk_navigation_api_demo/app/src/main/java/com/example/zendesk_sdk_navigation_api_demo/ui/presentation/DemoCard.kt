@@ -1,5 +1,6 @@
 package com.example.zendesk_sdk_navigation_api_demo.ui.presentation
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -28,6 +29,7 @@ fun DemoCard(
     onBackNavigationChange: (Boolean) -> Unit,
     onButtonClick: () -> Unit,
     modifier: Modifier = Modifier,
+    enableWarningLabel: Boolean,
     enableBackNavigationUi: Boolean = true,
 ) {
     Card(
@@ -53,9 +55,30 @@ fun DemoCard(
                         onCheckedChange = onBackNavigationChange
                     )
                     Text(
-                        text = "Enable Back Navigation",
+                        text = "Enable exit back to parent screen",
                         style = MaterialTheme.typography.bodyMedium
                     )
+                }
+                if (enableWarningLabel) {
+                    Row(
+                        modifier = Modifier
+                            .padding(top = 8.dp)
+                            .fillMaxWidth(),
+                        horizontalArrangement = Arrangement.Start
+                    ) {
+                        Text(
+                            text = "Please provide a conversation ID to test this screen",
+                            modifier = Modifier
+                                .padding(horizontal = 8.dp, vertical = 4.dp)
+                                .background(
+                                    color = MaterialTheme.colorScheme.error.copy(alpha = 0.15f),
+                                    shape = MaterialTheme.shapes.small
+                                )
+                                .padding(horizontal = 12.dp, vertical = 6.dp),
+                            style = MaterialTheme.typography.labelMedium,
+                            color = MaterialTheme.colorScheme.error
+                        )
+                    }
                 }
             }
             Row(
@@ -82,6 +105,7 @@ private fun DemoCardPreview() {
             description = "This is a description of the demo card.",
             buttonText = "Click Me",
             backNavigationEnabled = true,
+            enableWarningLabel = true,
             onBackNavigationChange = {},
             onButtonClick = {}
         )

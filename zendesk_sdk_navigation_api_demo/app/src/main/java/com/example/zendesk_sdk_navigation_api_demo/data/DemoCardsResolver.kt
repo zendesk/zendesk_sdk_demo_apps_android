@@ -94,6 +94,7 @@ class DemoCardsResolver @Inject constructor(private val zendeskManager: ZendeskM
                 title = context.getString(R.string.conversation_title),
                 description = context.getString(R.string.conversation_description),
                 buttonText = context.getString(R.string.go_to_conversation),
+                enableWarningLabel = true,
                 onAction = { backNavEnabled ->
                     onNavigateToConversationScreen(backNavEnabled)
                 }

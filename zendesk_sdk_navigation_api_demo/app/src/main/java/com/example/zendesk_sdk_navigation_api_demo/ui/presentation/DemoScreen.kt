@@ -58,6 +58,7 @@ fun DemoScreen(
                     onButtonClick = { card.onAction(backNavigationStates[index]) },
                     enableBackNavigationUi = card.enableBackNavigationUi,
                     backNavigationEnabled = backNavigationStates[index],
+                    enableWarningLabel = card.enableWarningLabel,
                     onBackNavigationChange = { checked ->
                         backNavigationStates = backNavigationStates.toMutableList().also {
                             it[index] = checked
@@ -81,6 +82,13 @@ private fun ContentPreview() {
                     description = context.getString(R.string.recently_active_conversation_description),
                     buttonText = context.getString(R.string.go_to_conversation),
                     onAction = {}
+                ),
+                DemoCardInfo(
+                    title = context.getString(R.string.conversation_title),
+                    description = context.getString(R.string.conversation_description),
+                    buttonText = context.getString(R.string.go_to_conversation),
+                    enableWarningLabel = true,
+                    onAction = { }
                 ),
                 DemoCardInfo(
                     title = context.getString(R.string.conversation_list_title),
