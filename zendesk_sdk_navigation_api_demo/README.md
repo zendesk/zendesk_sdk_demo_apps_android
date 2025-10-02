@@ -40,9 +40,18 @@ The app demonstrates the following `MessagingScreen` types:
 
 - `MessagingScreen.MostRecentActiveConversation()` - Shows the most recent conversation
 - `MessagingScreen.ConversationsList` - Shows all conversations  
-- `MessagingScreen.Conversation(id, onExit)` - Shows a specific conversation
-- `MessagingScreen.NewConversation(onExit)` - Creates and shows a new conversation
+- `MessagingScreen.Conversation(id)` - Shows a specific conversation
+- `MessagingScreen.NewConversation()` - Creates and shows a new conversation
 
 Each navigation option supports configurable exit actions:
 - `MessagingScreen.ExitAction.Close` - Returns to your app
 - `MessagingScreen.ExitAction.ReturnToConversationList` - Returns to conversation list
+
+**Example usage:**
+```kotlin
+// Navigate to a specific conversation with exit action
+val screen = MessagingScreen.Conversation(
+    id = "your_conversation_id",
+    onExit = MessagingScreen.ExitAction.Close // or MessagingScreen.ExitAction.ReturnToConversationList
+)
+```
