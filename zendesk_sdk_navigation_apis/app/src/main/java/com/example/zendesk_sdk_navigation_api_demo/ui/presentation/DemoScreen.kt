@@ -26,8 +26,8 @@ import kotlinx.collections.immutable.persistentListOf
 @Composable
 fun DemoScreen(
     cards: ImmutableList<DemoCardInfo>,
-    modifier: Modifier = Modifier,
     onNavigationIconClick: () -> Unit,
+    modifier: Modifier = Modifier,
 ) {
     var backNavigationStates by remember(cards.size) { mutableStateOf(List(cards.size) { false }) }
 

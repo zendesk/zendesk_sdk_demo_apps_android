@@ -2,7 +2,6 @@ package com.example.zendesk_sdk_navigation_api_demo.data
 
 import android.content.Context
 import com.example.zendesk_sdk_navigation_api_demo.R
-import com.example.zendesk_sdk_navigation_api_demo.data.ZendeskManager
 import kotlinx.collections.immutable.ImmutableList
 import kotlinx.collections.immutable.persistentListOf
 import zendesk.android.messaging.MessagingScreen
@@ -14,12 +13,14 @@ class DemoCardsResolver @Inject constructor(private val zendeskManager: ZendeskM
         return buildDemoCards(
             context = context,
             onNavigateToConversationList = {
+                // Documentation: https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/multi_conversations_navigation_apis/#conversationslist
                 zendeskManager.showMessaging(
                     context = context,
                     messagingScreen = MessagingScreen.ConversationsList
                 )
             },
             onCreateConversation = { enableBackNavigation ->
+                // Documentation: https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/multi_conversations_navigation_apis/#newconversation
                 val exitAction = if (enableBackNavigation) {
                     MessagingScreen.ExitAction.Close
                 } else {
@@ -33,6 +34,7 @@ class DemoCardsResolver @Inject constructor(private val zendeskManager: ZendeskM
                 )
             },
             onNavigateToConversationScreen = { enableBackNavigation ->
+                // Documentation: https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/multi_conversations_navigation_apis/#conversation
                 val exitAction = if (enableBackNavigation) {
                     MessagingScreen.ExitAction.Close
                 } else {
@@ -41,12 +43,13 @@ class DemoCardsResolver @Inject constructor(private val zendeskManager: ZendeskM
                 zendeskManager.showMessaging(
                     context = context,
                     messagingScreen = MessagingScreen.Conversation(
-                        id = "",
+                        id = "{conversationId}", // Replace with a valid conversation ID to test this screen
                         onExit = exitAction
                     )
                 )
             },
             onNavigateToRecentConversation = { enableBackNavigation ->
+                // Documentation: https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/multi_conversations_navigation_apis/#mostrecentactiveconversation
                 val exitAction = if (enableBackNavigation) {
                     MessagingScreen.ExitAction.Close
                 } else {
