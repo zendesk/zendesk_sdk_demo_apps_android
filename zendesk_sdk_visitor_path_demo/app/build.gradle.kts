@@ -4,16 +4,17 @@ plugins {
 }
 
 android {
-    namespace = "com.example.zendesk_sdk_metadata_demo"
+    namespace = "com.example.zendesk_sdk_visitor_path_demo"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.zendesk_sdk_metadata_demo"
+        applicationId = "com.example.zendesk_sdk_visitor_path_demo"
         minSdk = 21
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
         vectorDrawables.useSupportLibrary = true
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
@@ -37,4 +38,5 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
+    implementation(libs.androidx.lifecycle.runtime.ktx)
 }
