@@ -5,7 +5,7 @@ coreKtx = "1.17.0"
 appcompat = "1.7.1"
 material = "1.13.0"
 lifecycleRuntimeKtx = "2.9.4"
-zendeskMessaging = "2.35.0"
+zendeskMessaging = "2.36.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
