@@ -5,14 +5,15 @@ coreKtx = "1.17.0"
 appcompat = "1.7.1"
 material = "1.13.0"
 lifecycleRuntimeKtx = "2.9.4"
-zendeskMessaging = "2.36.0"
+
+zendesk-messaging = "2.36.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
-zendesk-messaging = { group = "zendesk.messaging", name = "messaging-android", version.ref = "zendeskMessaging" }
+zendesk-messaging = { group = "zendesk.messaging", name = "messaging-android", version.ref = "zendesk-messaging" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
