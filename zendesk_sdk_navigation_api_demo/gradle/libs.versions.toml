@@ -14,7 +14,7 @@ activity-compose = "1.11.0"
 compose-bom = "2025.09.01"
 
 # Zendesk
-zendesk-messaging = "2.35.0"
+zendesk-messaging = "2.36.0"
 
 immutable-collections = "0.4.0"
 hilt-android = "2.57.2"
