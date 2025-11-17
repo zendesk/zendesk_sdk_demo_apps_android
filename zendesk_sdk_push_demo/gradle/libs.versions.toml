@@ -8,7 +8,7 @@ lifecycleRuntimeKtx = "2.9.4"
 firebaseBom = "32.3.1"
 googleServices = "4.4.3"
 
-zendesk-messaging = "2.36.0"
+zendesk-messaging = "2.36.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
