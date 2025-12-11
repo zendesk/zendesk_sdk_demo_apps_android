@@ -22,4 +22,38 @@
     <color name="gradient_start_dark">#000000</color>
     <color name="gradient_end_dark">#001416</color>
 
+    <!-- UserColors Light Theme -->
+    <color name="user_primary_light">#1976D2</color>
+    <color name="user_on_primary_light">#FFFFFF</color>
+    <color name="user_action_light">#009688</color>
+    <color name="user_on_action_light">#FFFFFF</color>
+    <color name="user_on_message_light">#212121</color>
+    <color name="user_message_light">#E3F2FD</color>
+    <color name="user_on_business_message_light">#212121</color>
+    <color name="user_business_message_light">#FFF8E1</color>
+    <color name="user_background_light">#F5F5F5</color>
+    <color name="user_on_background_light">#212121</color>
+    <color name="user_on_secondary_action_light">#1976D2</color>
+    <color name="user_error_light">#D32F2F</color>
+    <color name="user_notify_light">#388E3C</color>
+    <color name="user_on_error_light">#FFFFFF</color>
+    <color name="user_on_notify_light">#FFFFFF</color>
+
+    <!-- UserColors Dark Theme -->
+    <color name="user_primary_dark">#90CAF9</color>
+    <color name="user_on_primary_dark">#212121</color>
+    <color name="user_action_dark">#80CBC4</color>
+    <color name="user_on_action_dark">#212121</color>
+    <color name="user_on_message_dark">#FFFFFF</color>
+    <color name="user_message_dark">#263238</color>
+    <color name="user_on_business_message_dark">#FFFFFF</color>
+    <color name="user_business_message_dark">#424242</color>
+    <color name="user_background_dark">#121212</color>
+    <color name="user_on_background_dark">#FFFFFF</color>
+    <color name="user_on_secondary_action_dark">#90CAF9</color>
+    <color name="user_error_dark">#EF9A9A</color>
+    <color name="user_notify_dark">#A5D6A7</color>
+    <color name="user_on_error_dark">#212121</color>
+    <color name="user_on_notify_dark">#212121</color>
+
 </resources>
