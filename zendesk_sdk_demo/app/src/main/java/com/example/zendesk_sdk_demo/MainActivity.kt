@@ -11,19 +11,11 @@ import androidx.core.content.ContextCompat
 import androidx.core.view.WindowCompat
 import androidx.core.view.isVisible
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import dagger.hilt.android.AndroidEntryPoint
 import zendesk.android.messaging.model.UserColors
 import zendesk.logger.Logger
 import zendesk.messaging.android.DefaultMessagingFactory
-import javax.inject.Inject
 
-@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
-
-    @Inject
-    lateinit var zendeskManager: ZendeskManager
-
-    private val LOG_TAG = "[${this.javaClass.name}]"
 
     private var coordinatorLayout: CoordinatorLayout? = null
 
@@ -41,16 +33,17 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.InitButton).isVisible = false
 
-        // https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/getting_started/#4-show-messaging
+        // https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/sdks/android/ui_customization
         findViewById<Button>(R.id.StartButton).setOnClickListener {
-            zendeskManager.showMessaging(context = this)
+            ZendeskManager.showMessaging(context = this)
         }
 
         findViewById<Button>(R.id.ChangeColorsButton).setOnClickListener {
-            zendeskManager.invalidate()
-            zendeskManager.initialize(
+            ZendeskManager.invalidate()
+            ZendeskManager.initialize(
                 context = this,
                 channelKey = this.getString(R.string.channel_key),
+                //
                 factory = DefaultMessagingFactory(
                     userLightColors = lightColors(),
                     userDarkColors = darkColors(),

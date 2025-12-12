@@ -5,9 +5,8 @@ import android.widget.Toast
 import zendesk.android.Zendesk
 import zendesk.android.messaging.MessagingFactory
 import zendesk.logger.Logger
-import javax.inject.Inject
 
-class ZendeskManager @Inject constructor() {
+object ZendeskManager {
 
     fun initialize(
         context: Context,
@@ -44,7 +43,5 @@ class ZendeskManager @Inject constructor() {
         Zendesk.invalidate()
     }
 
-    companion object {
-        private const val LOG_TAG = "ZendeskManager"
-    }
+    private const val LOG_TAG = "ZendeskManager"
 }
