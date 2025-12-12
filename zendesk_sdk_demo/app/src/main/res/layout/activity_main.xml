@@ -46,6 +46,8 @@
 
             <include layout="@layout/conversation_cardview" />
 
+            <include layout="@layout/colors_api_cardview" />
+
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>
