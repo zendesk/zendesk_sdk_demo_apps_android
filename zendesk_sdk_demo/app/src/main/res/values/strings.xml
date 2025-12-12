@@ -20,6 +20,10 @@
     <string name="conversation_card_description">Displays the conversation screen for the initial conversation created for your user. A user and a new conversation will automatically be created if they don\'t exist. Ensure you have previously initialized the Zendesk SDK.</string>
     <string name="conversation_button">Show conversation</string>
 
+    <string name="colors_api_card_title">Change the theme color</string>
+    <string name="colors_api_card_description">Demonstrates changing the theme color of the Zendesk SDK using the Colors API.</string>
+    <string name="colors_api_button">Change theme color</string>
+
     <!-- SNACK BAR -->
 
     <string name="msg_init_success">Initialization Successful</string>
