@@ -43,7 +43,6 @@ class MainActivity : AppCompatActivity() {
             ZendeskManager.initialize(
                 context = this,
                 channelKey = this.getString(R.string.channel_key),
-                //
                 factory = DefaultMessagingFactory(
                     userLightColors = lightColors(),
                     userDarkColors = darkColors(),
