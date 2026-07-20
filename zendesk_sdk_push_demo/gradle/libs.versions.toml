@@ -1,6 +1,6 @@
 [versions]
 agp = "8.12.3"
-kotlin = "2.2.20"
+kotlin = "2.3.21"
 coreKtx = "1.17.0"
 appcompat = "1.7.1"
 material = "1.13.0"
@@ -8,7 +8,7 @@ lifecycleRuntimeKtx = "2.9.4"
 firebaseBom = "32.3.1"
 googleServices = "4.4.3"
 
-zendesk-messaging = "2.39.0"
+zendesk-messaging = "2.40.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
