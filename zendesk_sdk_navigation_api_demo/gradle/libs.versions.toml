@@ -1,9 +1,9 @@
 [versions]
 # Plugin versions
-agp = "8.12.3"
+agp = "9.2.1"
 kotlin = "2.3.21"
-hilt = "2.57.2"
-ksp = "2.2.10-2.0.2"
+hilt = "2.60.1"
+ksp = "2.3.9"
 
 # Androidx
 core-ktx = "1.17.0"
@@ -17,7 +17,7 @@ compose-bom = "2025.09.01"
 zendesk-messaging = "2.41.0"
 
 immutable-collections = "0.4.0"
-hilt-android = "2.57.2"
+hilt-android = "2.60.1"
 
 [libraries]
 # AndroidX
