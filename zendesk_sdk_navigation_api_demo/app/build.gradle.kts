@@ -11,7 +11,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.zendesk_sdk_navigation_api_demo"
-        minSdk = 21
+        minSdk = 24
         targetSdk = 37
         versionCode = 1
         versionName = "1.0"
